@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+LOCALKEY=~/.ssh/id_ed25519
+
+eval "$(ssh-agent -s)"
+
+ssh-add "$LOCALKEY"
